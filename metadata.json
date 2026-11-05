@@ -1,0 +1,6 @@
+{
+  "name": "FriEndS CafE - Great Coffee, Good Food, Best Friends",
+  "description": "Cozy cafe website for FriEndS CafE featuring an interactive digital menu, today's special combo, online table reservations, and pre-orders.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

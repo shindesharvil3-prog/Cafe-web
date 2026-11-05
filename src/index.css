@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --cafe-bg: #FAF6EE;
+    --cafe-surface: #FFFFFF;
+    --cafe-espresso: #2B1810;
+    --cafe-dark: #1E120D;
+    --cafe-caramel: #B86B2F;
+    --cafe-warm: #EADBC8;
+    --cafe-cream: #F5EFE6;
+  }
+
+  body {
+    background-color: var(--cafe-bg);
+    color: var(--cafe-espresso);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-cafe {
+    font-family: 'Fraunces', Georgia, serif;
+  }
+}
+
+/* Custom smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Indian Veg / Non-Veg Indicator styling */
+.veg-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid #16a34a;
+  border-radius: 3px;
+  background-color: #ffffff;
+  padding: 1px;
+}
+.veg-indicator::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #16a34a;
+}
+
+.non-veg-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid #dc2626;
+  border-radius: 3px;
+  background-color: #ffffff;
+  padding: 1px;
+}
+.non-veg-indicator::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 7px solid #dc2626;
+}
